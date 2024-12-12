@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purchase Complete</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        #message {
+            font-size: 20px;
+            color: green;
+            margin-top: 20px;
+            display: none;
+        }
+        .buy-now-btn {
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .buy-now-btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <button class="buy-now-btn" onclick="completePurchase()">Buy Now</button>
+
+    <div id="message">Your purchase has been completed.</div>
+
+    <script>
+        function completePurchase() {
+            // Change the message text (optional)
+            document.getElementById('message').textContent = 'Your purchase has been completed.';
+            
+            // Show the message
+            document.getElementById('message').style.display = 'block';
+
+            // Hide the "Buy Now" button (optional)
+            document.querySelector('.buy-now-btn').style.display = 'none';
+        }
+    </script>
+
+</body>
+</html>

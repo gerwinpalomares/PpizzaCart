@@ -1,0 +1,325 @@
+* { 
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins, sans-serif";
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding: 15px;
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .col-1 { width: 8.33%; }
+  .col-2 { width: 16.66%; }
+  .col-3 { width: 25%; }
+  .col-4 { width: 33.33%; }
+  .col-5 { width: 41.66%; }
+  .col-6 { width: 50%; }
+  .col-7 { width: 58.33%; }
+  .col-8 { width: 66.66%; }
+  .col-9 { width: 75%; }
+  .col-10 { width: 83.33%; }
+  .col-11 { width: 91.66%; }
+  .col-12 { width: 100%; }
+
+  .header {
+    background-color: rgb(238, 200, 33);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    overflow: hidden;
+  }
+
+  .logo img {
+    width: 250px;
+    height: 50px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .logo img:hover {
+    box-shadow: 0 0 10px 5px white;
+    transform: scale(1.2);
+  }
+
+  
+  nav {
+    align-items: right;
+    margin-top: 20px;
+    margin-right: 30px;
+    padding-right: 50px;
+    font-weight: bolder;
+  }
+
+  nav ul {
+    list-style-type: none;
+  }
+
+  nav ul li {
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-right: 20px;
+  }
+
+  nav ul li a {
+    color: #ffff;
+    padding: 0px;
+    text-decoration: none;
+    font-size: 20px;
+  }
+
+  /* Change the link color on hover */
+  nav li a:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  nav ul li a.current {
+    color: black;
+  }
+
+  .logout i {
+    font-size: 20px;
+    color: red;
+  }
+
+  .container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('back.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .container form {
+    width: 670px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+    backdrop-filter: blur(30px);
+    flex-wrap: wrap;
+    box-shadow: 0 0 10px 5px black;
+  }
+  
+  .container form h1 {
+    color: #000;
+    font-weight: 700;
+    line-height: 2;
+    margin-top: 20px;
+    width: 500px;
+    text-align: center;
+    padding-bottom: 30px;
+    font-size: 50px;
+  }
+
+  .container form input {
+    width: 300px;
+    height: 50px;
+    padding-left: 10px;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    margin-bottom: 10px;
+    background: none;
+    border-bottom: 2px solid #000;
+    color: #000;
+  }
+
+  .container form input::placeholder {
+    color: #000;
+  }
+
+  .container form #lastName, .container form #mobile {
+    margin-left: 20px;
+  }
+
+  .container form h4 {
+    color: #000;
+    font-weight: 300;
+    width: 600px;
+    margin-top: 20px;
+  }
+
+  .container form textarea {
+    background: none;
+    border: none;
+    border-bottom: 2px solid #000;
+    color: #000;
+    font-weight: 200;
+    font-size: 20px;
+    padding: 10px;
+    outline: none;
+    min-height: 90px;
+    max-height: 90px;
+    min-width: 620px;
+    max-width: 620px;
+  }
+
+  .container form h4 {
+    font-size: 20px;
+  }
+
+  .container form #button {
+    border: none;
+    background: rgb(238, 200, 33);
+    border-radius: 30px;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 24px;
+    color: black;
+    width: 200px;
+    height: 60px;
+    padding: 0;
+    margin-bottom: 30px;
+    transition: 0.3s;
+    font-weight: bolder;
+  }
+
+  .container form #button:hover {
+    background: black;
+    color: #fff;
+    transition: .5s ease-in-out;
+  }
+
+  footer {
+      background: rgb(238, 200, 33);
+      height: 10vh;
+      font-size: 20px;
+  }
+
+  footer p {
+      text-align: center;
+      line-height: 10vh;
+      font-weight: 600;
+  }
+
+  footer p a {
+      color: white;
+      text-decoration: none;
+      font-weight: 900;
+  }
+
+  footer p a:hover {
+    text-decoration: underline;
+  }
+
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%
+  }
+
+  @media only screen and (max-width: 650px) {
+
+    .header {
+      display: block;
+    }
+  
+    .logo {
+   
+      text-align: center;
+      color: black;
+      letter-spacing: 1px;
+      cursor: pointer;
+      font-size: 25px;
+      font-weight: bold;
+    }
+    
+    nav {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      background-color: rgb(238, 200, 33);
+      background-size: 100%;
+      margin: 0px;
+      padding-right: 0px;
+    }
+
+    nav ul li {
+      display: block;
+      padding: 10px;
+      text-align: center;
+    } 
+
+    nav ul li a {
+      font-size: 15px;
+    }
+
+    row { 
+      margin: 0px;
+    }
+
+  }
+
+@media only screen and (max-width: 850px) {
+  
+  footer {
+      background: rgb(238, 200, 33);
+      height: 10vh;
+  }
+
+  footer p {
+      text-align: center;
+      line-height: 10vh;
+      font-weight: 600;
+  }
+
+  footer p a {
+      color: white;
+      text-decoration: none;
+      font-weight: 900;
+  }
+}
+
+ /* For Tablets: */
+  @media only screen and (min-width: 600px) {
+
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+
+  }
+
+
+  /* For Desktop: */
+  @media only screen and (min-width: 768px) {
+
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+  }

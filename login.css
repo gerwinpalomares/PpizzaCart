@@ -1,0 +1,174 @@
+/* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+     display: flex; 
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('a.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.login-form {
+    width: 500px;
+    background-color:transparent;
+    border-radius: 12px;
+    padding: 30px 40px;
+    box-shadow: 0 0 10px 5px white;
+}
+
+.login-form h1 {
+    font-size: 36px;
+    color: white;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.login-form .input-box {
+    width: 100%;
+    height: 50%;
+    margin: 30px 0;
+    display: flex;
+    align-items: center;
+    background: none;
+}
+
+.input-box input{
+    width: 100%;
+    height: 50%;
+    border: none;
+    outline: none;
+    background: transparent;
+    border: 2px solid rgb(238, 200, 33);
+    border-radius: 40px;
+    color: white;
+    font-size: 16px;
+    padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder {
+    color: white;
+}
+
+.input-box i {
+    font-size: 30px;
+    padding-right: 15px;
+    color: rgb(238, 200, 33);
+}
+
+/* Password container styling 
+.password-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+/* Input styling 
+.password-container input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    border: 2px solid rgb(238, 200, 33);
+    border-radius: 40px;
+    color: white;
+    font-size: 16px;
+    padding: 20px 45px 20px 20px;
+}
+
+/* Toggle button styling 
+.toggle-password {
+    border: none;
+    background: none;
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    padding: 0;
+}
+
+/* Icon styling 
+.toggle-password i {
+    font-size: 20px;
+    color: white;
+}
+
+
+.login-form .btn {
+    width: 100%;
+    height: 45px;
+    background: rgb(238, 200, 33);
+    border-radius: 40px;
+    outline: none;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+    font-weight: 600;
+}
+
+.login-form .btn:hover {
+    background-color: rgb(228, 173, 24);
+}
+
+.login-form .register-link {
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+/* Responsive styles 
+@media (max-width: 768px) {
+    .login-form {
+        width: 80%;
+        padding: 20px;
+    }
+
+    .login-form h1 {
+        font-size: 24px;
+    }
+
+    .input-box input {
+        padding: 15px 20px;
+        font-size: 14px;
+    }
+
+    .login-form .btn {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .login-form {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .login-form h1 {
+        font-size: 20px;
+    }
+
+    .input-box input {
+        padding: 10px 15px;
+        font-size: 12px;
+    }
+
+    .login-form .btn {
+        height: 40px;
+        font-size: 12px;
+    }
+
+    .register-link p {
+        font-size: 12px;
+    }
+}
